@@ -1,0 +1,8 @@
+<h4>Steps To Achive this :- </h4>
+<p><b>1.</b> Create an App Using Angular CLI </p>
+<p><b>2.</b> Create a GUARD using the command "ng g guard *your_guard_name*" && Import in your app module.</p>
+<p><b>3.</b> Create a SERVICE using the command "ng g service *your_service_name*" && Import in your app module. </p>
+<p><b>4.</b> Create Some components && Configure the Routes of you Application </p>
+
+<p *ngIf="isLoggedIn"><a routerLink="/login">Login</a></p> <input *ngIf="!isLoggedIn" type="button" value="Logout" (click)="logout()">
+<p><a routerLink="/events">Events</a></p>

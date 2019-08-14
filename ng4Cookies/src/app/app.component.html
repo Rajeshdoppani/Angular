@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <table border=1; align="center">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Film Name</th>
+        <th>Release Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let f of cookieValue; let i=index;">
+        <td>{{i+1}}</td>
+        <td>{{f.film}}</td>
+        <td>{{f.releaseDate}}</td>
+      </tr>
+    </tbody>
+  </table><br />
+  <button type="button" (click)="clearCookies()">Clear Cookies</button>
+  <pre>{{cookieValue | json}}</pre>
+</div>

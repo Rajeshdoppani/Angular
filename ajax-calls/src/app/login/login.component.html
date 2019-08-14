@@ -1,0 +1,16 @@
+<fieldset>
+  <h3>Login To Your Account</h3>
+  <form name="loginForm">
+    <label>Email :
+      <input type="email" name="userName" [(ngModel)]="user.userName" />
+    </label>
+    <br/>
+    <br/>
+    <label>Password :
+      <input type="password" name="password" [(ngModel)]="user.password" />
+    </label>
+    <br/>
+    <br/>
+    <button (click)="login(user)">Login</button>
+  </form>
+</fieldset>

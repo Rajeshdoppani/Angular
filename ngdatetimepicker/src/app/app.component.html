@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Angular Date Time Picker
+  </h1>
+  <div class="example-container">
+    <form action="" [formGroup]="datePickerForm">
+      <angular2-date-picker matInput placeholder="My Input" formControlName="mydate" [settings]="settings" (onDateSelect)="onDateSelect($event)"></angular2-date-picker >
+      <button mat-raised-button color="primary" [disabled]="!datePickerForm.valid" (click)="onclicking()">Submit</button>
+    </form>
+  </div>
+</div>

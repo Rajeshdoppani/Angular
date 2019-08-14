@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <!-- <kendo-treeview
+    [nodes]="data"
+    [children]="children"
+    [hasChildren]="hasChildren"
+    textField="category_name"
+    [kendoTreeViewCheckable]="checkableSettings"
+    [(checkedKeys)]="checkedKeys">
+  </kendo-treeview> -->
+  <kendo-treeview
+    [nodes]="data"
+    textField="category_name"
+    kendoTreeViewExpandable
+    [children]="fetchChildren.bind(this)"
+    [hasChildren]="hasChildren"
+    kendoTreeViewCheckable
+    [(checkedKeys)]="checkedKeys">
+  </kendo-treeview>
+</div>
